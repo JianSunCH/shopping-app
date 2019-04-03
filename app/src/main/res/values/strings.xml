@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MuTao_5_7</string>
+    <string name="sale">已售:</string>
+    <string name="main">主页</string>
+    <string name="shop">购物</string>
+    <string name="user">用户</string>
+    <string name="background">后台管理系统</string>
+    <string name="back">返回用户界面</string>
+    <string-array name="main_menu">
+        <item>飞机票</item>
+        <item>火车票</item>
+        <item>汽车票</item>
+        <item>蛋糕</item>
+        <item>美食</item>
+        <item>手表</item>
+        <item>电脑</item>
+        <item>手机</item>
+    </string-array>
+
+    <string-array name="img_url">
+        <item>"http://www.imooc.com/data/shopping/img/niu.png"</item>
+        <item>"http://www.imooc.com/data/shopping/img/san.png"</item>
+        <item>"http://www.imooc.com/data/shopping/img/xia.png"</item>
+        <item>"http://www.imooc.com/data/shopping/img/lengying.png"</item>
+        <item>"http://www.imooc.com/data/shopping/img/niu.png"</item>
+        <item>"http://www.imooc.com/data/shopping/img/san.png"</item>
+    </string-array>
+</resources>
