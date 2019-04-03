@@ -3,6 +3,7 @@ This is a small shopping app.
 
 4.1 欢迎页面(SplashActivity)
  
+![avatar](http://ppdh7s4hn.bkt.clouddn.com/%E5%9B%BE%E7%89%87%201.png)
 
 SplashActivity部分代码如下：
 public class SplashActivity extends AppCompatActivity {
@@ -24,6 +25,7 @@ public class SplashActivity extends AppCompatActivity {
 4.2用户登录注册功能的实现
 首先要实现 RegisterActivity类，该类用来显示用户注册时的界面。用户在点击位于注册界面的“注册”按钮之后，RegisterActivity类会调用Intent传值，将注册所输入用户名传入到LoginActivity中，简化了用户的操作。
  
+ ![avatar](http://ppdh7s4hn.bkt.clouddn.com/%E5%9B%BE%E7%89%87%203.png)
 
 Intent传值部分代码如下：
 Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
@@ -64,7 +66,8 @@ btn_login.setOnClickListener(new View.OnClickListener() {
 
 
 如果忘记密码，可以点击找回密码，这是一个自定义的Dialog:
- 
+![avatar](http://ppdh7s4hn.bkt.clouddn.com/%E5%9B%BE%E7%89%87%204.png)
+![avatar](http://ppdh7s4hn.bkt.clouddn.com/%E5%9B%BE%E7%89%87%205.png)
 	
 public MyDialog(@NonNull Context context, @StyleRes int themeResId) {
     super(context, themeResId);
@@ -139,6 +142,7 @@ public MyDialog(@NonNull Context context, @StyleRes int themeResId) {
 4.3 主界面布局
  
 图片数据以及文字数据均有网络获取，数据获取由json解析得来，部分代码如下：
+![avatar](http://ppdh7s4hn.bkt.clouddn.com/%E5%9B%BE%E7%89%87%206.png)
 @Override
 protected void onPostExecute(String result) {
     super.onPostExecute(result);
@@ -270,10 +274,11 @@ public void onClick(View v) {
 4.5商品信息展示功能的实现
 商品信息展示模块要实现的功能主要是商品分类和商品信息展示。该界面详情如图所示。
 所显示数据也是通过网络获取然后json解析所得。
-
+![avatar](http://ppdh7s4hn.bkt.clouddn.com/%E5%9B%BE%E7%89%87%208.png)
 	 
 4.6后台用户信息管理模块
-	 
+![avatar](http://ppdh7s4hn.bkt.clouddn.com/%E5%9B%BE%E7%89%87%209.png)
+![avatar](http://ppdh7s4hn.bkt.clouddn.com/%E5%9B%BE%E7%89%87%2010.png)
 数据库创建的部分代码如下：
 private void initDB() {
         String path = Environment.getExternalStorageDirectory() + "/user.db";
